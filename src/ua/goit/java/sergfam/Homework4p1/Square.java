@@ -16,7 +16,7 @@ public class Square extends Figure {
     }
 
     public Square(double a, double b) {
-        super(a, b);
+     //   super(a, b);
         x = Math.min(a, b);
     }
 

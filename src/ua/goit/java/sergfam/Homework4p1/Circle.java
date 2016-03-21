@@ -16,7 +16,7 @@ public class Circle extends Figure {
     }
 
     public Circle(double a, double b) {
-        super(a, b);
+     //   super(a, b);
         radius = Math.min(a, b) / 2;
     }
 

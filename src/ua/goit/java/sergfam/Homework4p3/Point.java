@@ -1,6 +1,5 @@
 package ua.goit.java.sergfam.Homework4p3;
 
-import java.util.Scanner;
 
 /**
  * Created by Serg-fam on 11.03.2016 on 14:52.
@@ -8,43 +7,32 @@ import java.util.Scanner;
 
 public class Point {
 
-    double x;
-    double y;
+    private double x;
+    private double y;
 
-    void printPoint() {
-        System.out.print("(" + x + ";" + y + ")");
-    }
 
+    /*  void printPoint() {
+           System.out.print("(" + x + ";" + y + ")");
+       } */
 
     void setPoint(double a, double b) {
         x = a;
         y = b;
     }
 
-
     void setPoint(double a) {
         x = a;
         y = a;
     }
 
-    void inputPoint() {
-        Scanner inp = new Scanner(System.in);
-        System.out.print("Enter abscissa: ");
-        double a = inp.nextDouble();
-        System.out.print("Enter ordinate: ");
-        double b = inp.nextDouble();
 
-        setPoint(a, b);
-    }
-
-
-    boolean isSame(Point a) {
+ /*  boolean isSame(Point a) {
         if (x == a.x && y == a.y) {
-            return true;
-        } else {
-            return false;
-        }
+    return true;
+       } else {
+        return false;
     }
+ } */
 
 
     double getDistance(Point a) {
@@ -52,10 +40,10 @@ public class Point {
     }
 
 
-    double getRadius() {
-        Point a = new Point(0, 0);
-        return this.getDistance(a);
-    }
+    //  double getRadius() {
+    //      Point a = new Point(0, 0);
+    //     return this.getDistance(a);
+    // }
 
 
     Point() {
@@ -70,6 +58,20 @@ public class Point {
         this.x = x;
         this.y = y;
     }
+
+
+
+
+  /*void inputPoint() {
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Enter abscissa: ");
+        double a = inp.nextDouble();
+        System.out.print("Enter ordinate: ");
+        double b = inp.nextDouble();
+
+      setPoint(a,b);
+
+  } */
 
 }
 

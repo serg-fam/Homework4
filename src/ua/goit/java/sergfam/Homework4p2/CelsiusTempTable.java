@@ -1,7 +1,5 @@
 package ua.goit.java.sergfam.Homework4p2;
 
-import ua.goit.java.sergfam.Homework4p1.Figure;
-
 import java.util.Scanner;
 
 /**
@@ -20,19 +18,19 @@ public class CelsiusTempTable {
 
         double far = f.nextDouble();
 
-        double farRez = CelsiusToFarengate(cel);
-        double celRez = FarengateToCelsius(far);
+        double farRez = celsiusToFarengate(cel);
+        double celRez = farengateToCelsius(far);
 
         System.out.println("Fahrenheit= " + farRez);
         System.out.println("Celsium= " + celRez);
 
     }
 
-    public static double CelsiusToFarengate(double cel) {
+    public static double celsiusToFarengate(double cel) {
         return (cel * 1.8) + 32;
     }
 
-    public static double FarengateToCelsius(double far) {
+    public static double farengateToCelsius(double far) {
         return (far - 32) / 1.8;
     }
 }
